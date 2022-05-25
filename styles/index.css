@@ -154,6 +154,15 @@ body {
   height: 100px;
   border-radius: 10px 10px 0 0;
 }
+@media only screen and (max-width: 480px) {
+  .footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 200px;
+    flex-direction: column;
+  }
+}
 .footer__logo {
   width: 50px;
 }
@@ -165,6 +174,11 @@ body {
 .footer__copyright {
   color: white;
   margin-left: 150px;
+}
+@media only screen and (max-width: 480px) {
+  .footer__copyright {
+    margin: 0;
+  }
 }
 .footer__sociais {
   width: 200;
@@ -252,17 +266,17 @@ body {
   background-size: 400%;
   transition: background 1000ms ease-in-out;
 }
+@media only screen and (max-width: 480px) {
+  .button__primary {
+    width: 100px;
+    height: 30px;
+    font-size: 16px;
+  }
+}
 .button__primary:hover {
   background-position: 0;
   color: #363536;
   cursor: pointer;
-}
-@media only screen and (max-width: 480px) {
-  .button__primary {
-    width: 120px;
-    height: 40px;
-    font-size: 16px;
-  }
 }
 
 .projects {
@@ -337,6 +351,15 @@ body {
   position: fixed;
   right: 20px;
   bottom: 100px;
+}
+@media only screen and (max-width: 480px) {
+  .telegram {
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    right: 10px;
+    bottom: 100px;
+  }
 }
 .telegram__svg {
   fill: #101010;

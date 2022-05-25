@@ -18,15 +18,15 @@
 
   transition: background 1000ms ease-in-out;
 
+  @include mixins.mobile {
+    width: 100px;
+    height: 30px;
+    font-size: variables.$font-size-default;
+  }
+
   &:hover {
     background-position: 0;
     color: variables.$color-darken-gray;
     cursor: pointer;
-  }
-
-  @include mixins.mobile {
-    width: 120px;
-    height: 40px;
-    font-size: variables.$font-size-default;
   }
 }
