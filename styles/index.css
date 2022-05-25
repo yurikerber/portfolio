@@ -268,7 +268,7 @@ body {
 }
 @media only screen and (max-width: 480px) {
   .button__primary {
-    width: 100px;
+    width: 125px;
     height: 30px;
     font-size: 16px;
   }

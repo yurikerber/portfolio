@@ -19,9 +19,11 @@
   transition: background 1000ms ease-in-out;
 
   @include mixins.mobile {
-    width: 100px;
-    height: 30px;
-    font-size: variables.$font-size-default;
+    & {
+      width: 1055px;
+      height: 30px;
+      font-size: variables.$font-size-default;
+    }
   }
 
   &:hover {
