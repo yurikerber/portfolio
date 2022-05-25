@@ -1,2 +1,45 @@
 @use "../base/variables";
 @use "../base/mixins";
+
+.footer {
+
+  background: rgb(0, 0, 0);
+  background: linear-gradient(193deg, rgba(0, 0, 0, 1) 30%, rgba(0, 106, 106, 1) 49%, rgba(0, 0, 0, 1) 72%);
+  border-top: 2px solid variables.$color-blue;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100px;
+  border-radius: 10px 10px 0 0;
+
+  &__logo {
+    width: 50px;
+
+    @include mixins.mobile {
+      width: 50px;
+    }
+  }
+
+  &__copyright {
+    color: white;
+    margin-left: 150px;
+  }
+
+  &__sociais {
+    width: 200;
+    display: flex;
+
+    &__svg {
+      fill: white;
+      width: 30px;
+      margin-left: 15px;
+
+      &:hover {
+        fill: variables.$color-blue;
+        cursor: pointer;
+        transform: rotate(10deg);
+        transition: transform .4s;
+      }
+    }
+  }
+}

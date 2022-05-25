@@ -1,0 +1,47 @@
+@use "../base/variables";
+@use "../base/mixins";
+
+.projects {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  margin: 50px 200px;
+  border: 1px solid variables.$color-black;
+  border-radius: 10px;
+  background: linear-gradient(89.7deg, rgb(0, 0, 0) -10.7%, #00ffff22);
+  padding: 0 0 100px 0;
+
+  &__title {
+    font-size: 28px;
+    color: variables.$color-white;
+    margin: 40px 10px;
+  }
+
+  &__img {
+    width: 800px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border: 1px solid variables.$color-blue;
+  }
+
+  @include mixins.mobile {
+    & {
+      width: 100%;
+      margin: 0;
+      margin-top: 100px;
+      padding-top: 100px;
+
+      &__img {
+        width: 350px;
+        margin-top: 10px;
+      }
+
+      &__title {
+        font-size: 22px;
+        color: variables.$color-white;
+        margin-top: 100px;
+      }
+    }
+  }
+}

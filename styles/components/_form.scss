@@ -13,12 +13,33 @@
 
 
   &__form {
+    width: 80%;
 
-    &__input {
-      height: 50px;
+    &__title {
+      color: #ffffff;
+      font-size: 22px;
+      margin-top: 40px;
+      margin-bottom: 10px;
+      margin-left: 10px;
+
+      &--large {
+        font-size: 32px;
+      }
+    }
+
+    &__div {
+      display: flex;
+      flex-direction: column;
+      width: 80%;
+      margin: auto;
+    }
+
+    textarea {
+      height: 100px;
       padding: 10px;
       border-radius: 10px;
       border-color: variables.$color-blue;
+      margin-bottom: 30px;
       font-size: 18px;
 
       &:focus {

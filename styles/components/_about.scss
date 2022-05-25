@@ -1,0 +1,56 @@
+@use "../base/variables";
+@use "../base/mixins";
+
+.about {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 50px 200px;
+  border: 1px solid variables.$color-black;
+  border-radius: 10px;
+  background: linear-gradient(89.7deg, rgb(0, 0, 0) -10.7%, #00ffff22);
+
+
+  &__div {
+    width: 80%;
+    margin: auto;
+  }
+
+  &__me {
+
+    margin: 100px 10px;
+
+    &__title {
+      color: variables.$color-white;
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+  }
+
+  &__curso {
+    margin: 100px 10px;
+
+    &__logo {
+      width: 200px;
+      margin-bottom: 20px;
+    }
+  }
+
+  &__text {
+    margin: 0 100px;
+    margin-bottom: 50px;
+    font-size: 24px;
+    color: variables.$color-white;
+  }
+
+  @include mixins.mobile {
+    & {
+      margin: -80px 0;
+    }
+
+    &__text {
+      margin: 0 0 30px 0;
+    }
+  }
+
+}

@@ -16,15 +16,6 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css">
   <link rel="icon" type="image/x-icon" href="assets/logos/logoNf.png">
   <title>Yúri Kerber Fernandes</title>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZHXJH8589S"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-
-    gtag('config', 'G-ZHXJH8589S');
-  </script>
 </head>
 
 <body>
@@ -37,23 +28,12 @@
       <img class="header__logo" src="assets/logos/logoNf.png" alt="">
     </a>
     <nav class="header__menu">
-      <a href="index.html" class="header__menu__link header__menu__link--active">Início</a>
+      <a href="index.html" class="header__menu__link ">Início</a>
       <a href="about.html" class="header__menu__link">Sobre</a>
       <a href="" class="header__menu__link">Projetos</a>
-      <a href="contact.html" class="header__menu__link">Contato</a>
+      <a href="contact.html" class="header__menu__link header__menu__link--active">Contato</a>
     </nav>
   </header>
-
-  <section class="banner">
-    <img class="banner__img" src="assets/banner/banner.png" alt="">
-    <div class="banner__container ">
-      <span class="banner__text banner__text--small">.dev {</span>
-      <span class="banner__text">Yúri</span>
-      <span class="banner__text">Kerber</span>
-      <span class="banner__text">Fernandes</span>
-      <span class="banner__text banner__text--small">}</span>
-    </div>
-  </section>
 
   <div class="telegram"><a target="_blank" href="https://t.me/yurikerber">
       <svg class="telegram__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
@@ -64,70 +44,30 @@
     </a>
   </div>
 
-  <section class="about">
-    <div class="about__div">
-      <div class="about__me">
-        <h1 class="about__me__title">Hello world!</h1>
-        <p class="about__text">Me chamo Yúri Kerber Fernandes, estou estudando no Crie_TI na Univates em Lajeado RS.
-          Atualmente trabalho em
-          estrela na Brasilata Embalagens Metálicas como Envernizador Litográfico Júnior.</p>
-        <a href="#">
-          <button class="button__primary" type="button">Saiba Mais</button>
-        </a>
+  <section class="contato">
+    <form action="#" class="contato__form">
+      <h1 class="contato__form__title contato__form__title--large">Formulário</h1>
+      <div class="contato__form__div">
+        <label for="nome" class="contato__form__title">Nome</label>
+        <input type="text" id="nome" name="nome" placeholder="Ex: Maria dos Santos" value=""
+          class="contato__form__input" />
       </div>
-      <div class="about__curso">
-        <img class="about__curso__logo" src="https://www.univates.br/media/crie_ti/images/logo-crie-ti.png" alt="">
-        <p class="about__text">
-          Crie_TI é um curso imersivo e intensivo que iniciou com sua primeira turma em 2022 com o objetivo de formar
-          novos programadores pela região do Vale do Taquari.
-        </p>
-        <a href="#">
-          <button class="button__primary" type="button">Saiba Mais</button>
-        </a>
+      <div class="contato__form__div">
+        <label for="email" class="contato__form__title">E-mail</label>
+        <input type="email" id="email" placeholder="Ex: maria@email.com.br" name="email" value=""
+          class="contato__form__input" />
       </div>
-    </div>
-  </section>
-
-  <section class="projects">
-    <h1 class="about__me__title">Projetos</h1>
+      <div class="contato__form__div">
+        <label for="tel" class="contato__form__title">Telefone</label>
+        <input type="tel" id="tel" name="tel" value="" placeholder="(XX) 9 9999 - 9999" class="contato__form__input" />
+      </div>
+      <div class="contato__form__div">
+        <label for="mensagem" class="contato__form__title">Mensagem</label>
+        <textarea name="mensagem" id="mensagem" cols="30" placeholder="Deixe sua mensagem aqui" rows="10"></textarea>
+      </div>
+    </form>
     <div>
-      <div class="projects__title">
-        <h2>Olaria Alegria</h2>
-      </div>
-      <div class="projects__div">
-        <img class="projects__img" src="assets/projects/olaria.png" alt="">
-      </div>
-      <div>
-        <a href="#">
-          <button class="button__primary">Visitar</button>
-        </a>
-      </div>
-    </div>
-    <div>
-      <div class="projects__title">
-        <h2>Pet&shop</h2>
-      </div>
-      <div class="projects__div">
-        <img class="projects__img" src="assets/projects/petshop.png" alt="">
-      </div>
-    </div>
-    <div>
-      <a href="#">
-        <button class="button__primary">Visitar</button>
-      </a>
-    </div>
-    <div>
-      <div class="projects__title">
-        <h2>Pet&shop</h2>
-      </div>
-      <div class="projects__div">
-        <img class="projects__img projects__img--border" src="assets/projects/crieflix.png" alt="">
-      </div>
-    </div>
-    <div>
-      <a href="#">
-        <button class="button__primary">Visitar</button>
-      </a>
+      <button type="submit" class="button__primary">Enviar</button>
     </div>
   </section>
 

@@ -1,0 +1,22 @@
+@use "../base/variables";
+@use "../base/mixins";
+
+.telegram {
+  width: 80px;
+  height: 80px;
+  padding: 1px 2px;
+  border-radius: 50%;
+  background-color: variables.$color-blue;
+  position: fixed;
+  right: 20px;
+  bottom: 100px;
+
+  &__svg {
+    fill: variables.$color-black;
+
+    &:hover {
+      fill: variables.$color-light-gray;
+    }
+  }
+
+}
