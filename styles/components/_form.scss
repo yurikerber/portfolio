@@ -2,15 +2,18 @@
 @use "../base/mixins";
 
 .contato {
-  margin-top: 84px;
   height: 720px;
   background: linear-gradient(89.7deg, rgb(0, 0, 0) -10.7%, #00ffff22);
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 100px 200px 70px 200px;
+  margin: 100px 200px;
   border-radius: 10px;
 
+  @include mixins.mobile {
+    width: 100%;
+    margin: 70px 0 0 0;
+  }
 
   &__form {
     width: 80%;
@@ -32,6 +35,10 @@
       flex-direction: column;
       width: 80%;
       margin: auto;
+
+      @include mixins.mobile {
+        width: 100%;
+      }
     }
 
     textarea {

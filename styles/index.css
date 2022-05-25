@@ -284,16 +284,32 @@ body {
   justify-content: center;
   flex-direction: column;
   text-align: center;
-  margin: 50px 200px;
+  margin: 100px 200px;
   border: 1px solid #101010;
   border-radius: 10px;
   background: linear-gradient(89.7deg, rgb(0, 0, 0) -10.7%, rgba(0, 255, 255, 0.1333333333));
   padding: 0 0 100px 0;
+  padding-top: 33px;
+}
+@media only screen and (max-width: 480px) {
+  .projects {
+    width: 100%;
+    margin: 0;
+    margin-top: 70px;
+    padding-top: 33px;
+  }
 }
 .projects__title {
   font-size: 28px;
   color: #ffffff;
   margin: 40px 10px;
+}
+@media only screen and (max-width: 480px) {
+  .projects__title {
+    font-size: 22px;
+    color: #ffffff;
+    margin-top: 100px;
+  }
 }
 .projects__img {
   width: 800px;
@@ -301,21 +317,30 @@ body {
   margin-bottom: 20px;
   border: 1px solid #00ffff;
 }
+.projects__img--large {
+  width: 80%;
+}
 @media only screen and (max-width: 480px) {
-  .projects {
-    width: 100%;
-    margin: 0;
-    margin-top: 100px;
-    padding-top: 100px;
-  }
   .projects__img {
     width: 350px;
     margin-top: 10px;
   }
-  .projects__title {
-    font-size: 22px;
-    color: #ffffff;
-    margin-top: 100px;
+}
+.projects__div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.projects__div span {
+  font-size: 22px;
+  color: #ffffff;
+  width: 60%;
+  margin-bottom: 20px;
+}
+@media only screen and (max-width: 480px) {
+  .projects__div span {
+    font-size: 16px;
+    width: 80%;
   }
 }
 
@@ -377,6 +402,11 @@ body {
   border-radius: 10px;
   background: linear-gradient(89.7deg, rgb(0, 0, 0) -10.7%, rgba(0, 255, 255, 0.1333333333));
 }
+@media only screen and (max-width: 480px) {
+  .about {
+    margin: -80px 0;
+  }
+}
 .about__div {
   width: 80%;
   margin: auto;
@@ -403,23 +433,29 @@ body {
   color: #ffffff;
 }
 @media only screen and (max-width: 480px) {
-  .about {
-    margin: -80px 0;
-  }
   .about__text {
-    margin: 0 0 30px 0;
+    font-size: 16px;
+    WIDTH: 90%;
+    margin: auto;
+    margin-bottom: 25px;
+    line-height: 25px;
   }
 }
 
 .contato {
-  margin-top: 84px;
   height: 720px;
   background: linear-gradient(89.7deg, rgb(0, 0, 0) -10.7%, rgba(0, 255, 255, 0.1333333333));
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 100px 200px 70px 200px;
+  margin: 100px 200px;
   border-radius: 10px;
+}
+@media only screen and (max-width: 480px) {
+  .contato {
+    width: 100%;
+    margin: 70px 0 0 0;
+  }
 }
 .contato__form {
   width: 80%;
@@ -439,6 +475,11 @@ body {
   flex-direction: column;
   width: 80%;
   margin: auto;
+}
+@media only screen and (max-width: 480px) {
+  .contato__form__div {
+    width: 100%;
+  }
 }
 .contato__form textarea {
   height: 100px;
@@ -461,6 +502,17 @@ body {
   margin: auto;
   color: #ffffff;
   background: linear-gradient(89.7deg, rgb(0, 0, 0) -10.7%, rgba(0, 255, 255, 0.1333333333));
+  margin: 100px 200px;
+  border-radius: 10px;
+}
+@media only screen and (max-width: 480px) {
+  .about__section {
+    width: 100%;
+    padding: 30px;
+    height: 1050px;
+    margin: 0;
+    margin-top: 20px;
+  }
 }
 .about__section__img {
   width: 250px;
@@ -474,10 +526,16 @@ body {
   fill: #ffffff;
   width: 200px;
 }
-.about__section h1 {
+.about__section h1, .about__section h2 {
   font-size: 38px;
   text-align: center;
   margin: 30px 0;
+}
+@media only screen and (max-width: 480px) {
+  .about__section h1, .about__section h2 {
+    font-size: 28px;
+    line-height: 10px;
+  }
 }
 .about__section p {
   font-size: 28px;
@@ -488,6 +546,14 @@ body {
   margin-top: 100px;
   line-height: 50px;
 }
+@media only screen and (max-width: 480px) {
+  .about__section p {
+    margin-top: 50px;
+    width: 100%;
+    font-size: 16px;
+    line-height: 30px;
+  }
+}
 .about__section__div {
   font-size: 28px;
   width: 1000px;
@@ -496,4 +562,12 @@ body {
   margin-right: auto;
   margin-top: 100px;
   line-height: 50px;
+}
+@media only screen and (max-width: 480px) {
+  .about__section__div {
+    margin-top: 50px;
+    width: 100%;
+    font-size: 16px;
+    line-height: 25px;
+  }
 }/*# sourceMappingURL=index.css.map */

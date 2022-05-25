@@ -10,6 +10,12 @@
   border-radius: 10px;
   background: linear-gradient(89.7deg, rgb(0, 0, 0) -10.7%, #00ffff22);
 
+  @include mixins.mobile {
+
+    & {
+      margin: -80px 0;
+    }
+  }
 
   &__div {
     width: 80%;
@@ -41,16 +47,15 @@
     margin-bottom: 50px;
     font-size: 24px;
     color: variables.$color-white;
-  }
 
-  @include mixins.mobile {
-    & {
-      margin: -80px 0;
+    @include mixins.mobile {
+      & {
+        font-size: 16px;
+        WIDTH: 90%;
+        margin: auto;
+        margin-bottom: 25px;
+        line-height: 25px;
+      }
     }
-
-    &__text {
-      margin: 0 0 30px 0;
-    }
   }
-
 }
